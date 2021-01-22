@@ -1,0 +1,13 @@
+version: "3"
+services:
+  mariadb:
+    image: mariadb
+    ports:
+      - 3306:3306
+    volumes:
+      - /mariadb/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: dicdb
+      MYSQL_USER: dicuser
+      MYSQL_PASSWORD: 1qaz2wsx3edc
