@@ -7,7 +7,7 @@ services:
     volumes:
       - /mariadb/data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: dicdb
-      MYSQL_USER: dicuser
-      MYSQL_PASSWORD: 1qaz2wsx3edc
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD} 
